@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="../lit.css">
+  <title>Alex Chutkan</title>
+</head>
+
+<body>
+  <div class="c">
+
+    <div class="row card w-100">
+      <b class="col">Alex</b>
+      <div class="col">
+        <a href="../index.html">Posts</a>
+      </div>
+      <div class="col">
+        <a href="../about.html">About</a>
+      </div>
+      <div class="col">
+        <a href="../contact.html">Contact</a>
+      </div>
+    </div>
+
+    <div class="post">
+      <h3>What is xG?!</h3>
+      <aside>April 12, 2018</aside>
+      <hr>
+      <p>xG is a freaky, mysterious newer metric thats being used more and more in the analytics world. I'm going to do my best
+        to explain what the metric is, what it measures, and clear up some misconceptions that people have about xG.</p>
+      <h5>What is it?</h5>
+      <p>xG, in shortened terms, measures the quality of shots that a team or player makes during a match. Football analysts
+        have always known that all shots are not equal, there are variables that can change the course of any shot. For example,
+        a header off of a cross will have a much higher xG value than a shot from 17 yards away fom the goal. Shots are recorded
+        over time, and after enough data on shots is collected, an xG value is able to be given to each shot that represents
+        the possibility that that shot would result in a goal. Keep in mind that the data collected to give xG values is
+        taken from many teams over many matches, so the probability that each shot is converted into a goal is based on an
+        average of all of the teams from the league.</p>
+
+      <div class="xG-map" style="text-align: center;">
+        <figure>
+          <img src="https://s3-eu-west-1.amazonaws.com/scisports-production/2a8d8a_b0010c24664a4bd08a88c20f71256de3.png" alt="Heat Map">
+          <figcaption>xG Heat Map (red values mean higher xG)</figcaption>
+        </figure>
+      </div>
+
+      <p>As an example, imagine that Borussia Dortmund takes seven shots in a match, and somehow, all of their xG values are
+        .1, over the whole match their xG value would be 0.7. This means that an average team in the 1. Bundesliga would
+        be expected to score 0.7 goals based on the quality of shots that Borussia Dortmund took during the match. This works
+        the same way for players. If Dortmund
+        <em>scores</em>, on one of these seven shots, they would be outperforming their xG of 0.7. They are outperforming average
+        teams on their ability to convert shots into goals. Teams or players that consistently outperform their xG are considered
+        exceptional, and should be watched carefully.</p>
+      <p>xG is commonly provided by companies like Opta and Prozone, that collect data on football matches, with much better
+        technology than I have. They then use this data to calculate xG values for different locations. The way they give
+        xG values to shots is by splitting the field up into "sections" (like below but way more zones), and calculating
+        the probability of making a shot from that zone, based on other variables that influenced the shot such as being
+        off of a dribble, ground pass, cross, being in open play, etc.</p>
+
+      <div class="xG-map" style="text-align: center;">
+        <figure>
+          <img src="http://alexrathke.net/wp-content/uploads/2015/12/Soccer-Pitch-Zones.png" alt="Zone Map">
+          <figcaption>xG Zones</figcaption>
+        </figure>
+      </div>
+
+      <p>A common misconception with xG is that it is a predictive metric. It is easy to believe, if an xG value is shown before
+        a game, or someone sees xG without context, that xG is
+        <em>predicting</em> the amount of goals that a team or player will score. While xG and xG/Acutal Goals are great predictors
+        of future performance in players and teams, the metric is not a predictive one. It is also almost completely useless
+        to look at xG and compare it to goals without first looking at the mount of shots and shots on goal that a team took.
+        A team may have a high xG value because they took a LOT of very low quality shots, and that isn't something that
+        is really seen as good. A team that carefully placed their shots, but made sure they were of high quality would also
+        have a high xG value, but clearly this team would be better than the team that took many low value shots.</p>
+
+    </div>
+  </div>
+</body>
+
+</html>
